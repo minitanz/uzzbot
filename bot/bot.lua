@@ -227,8 +227,8 @@ function create_config( )
       "youtube",
       "media_handler",
       "moderation"},
-    sudo_users = {our_id},
-    disabled_channels = {},
+    sudo_users = {},
+    disabled_channels = { @minitanz,@miniclash,@minitoon,@mini_tanz_bot},
     moderation = {data = 'data/moderation.json'}
   }
   serialize_to_file(config, './data/config.lua')
